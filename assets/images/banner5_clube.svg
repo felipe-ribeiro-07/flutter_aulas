@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c3483"/>
+      <stop offset="100%" style="stop-color:#4a235a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg5)" rx="16"/>
+  <circle cx="640" cy="70" r="150" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="700" cy="250" r="85" fill="rgba(255,255,255,0.04)"/>
+  <rect x="40" y="40" width="150" height="28" rx="14" fill="rgba(255,215,0,0.25)"/>
+  <text x="115" y="59" font-family="'Nunito',sans-serif" font-size="13" font-weight="800" fill="#ffd700" text-anchor="middle" letter-spacing="1">CLUBE IFOOD</text>
+  <text x="50" y="125" font-family="'Nunito',sans-serif" font-size="54" font-weight="900" fill="white">Assine e</text>
+  <text x="50" y="180" font-family="'Nunito',sans-serif" font-size="54" font-weight="900" fill="#ffd700">economize mais</text>
+  <text x="50" y="222" font-family="'Nunito',sans-serif" font-size="19" font-weight="600" fill="rgba(255,255,255,0.65)">Fretes gratis todo mes</text>
+  <rect x="50" y="245" width="175" height="40" rx="20" fill="#ffd700"/>
+  <text x="137" y="270" font-family="'Nunito',sans-serif" font-size="15" font-weight="900" fill="#4a235a" text-anchor="middle">Assinar agora</text>
+  <text x="665" y="205" font-family="serif" font-size="130" fill="rgba(255,255,255,0.12)" text-anchor="middle">&#x1F381;</text>
+</svg>

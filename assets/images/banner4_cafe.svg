@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12"/>
+      <stop offset="100%" style="stop-color:#c0710d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg4)" rx="16"/>
+  <circle cx="630" cy="60" r="160" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="710" cy="260" r="90" fill="rgba(255,255,255,0.05)"/>
+  <rect x="40" y="40" width="110" height="28" rx="14" fill="rgba(0,0,0,0.15)"/>
+  <text x="95" y="59" font-family="'Nunito',sans-serif" font-size="13" font-weight="800" fill="rgba(255,255,255,0.95)" text-anchor="middle" letter-spacing="1">BOM DIA!</text>
+  <text x="50" y="125" font-family="'Nunito',sans-serif" font-size="52" font-weight="900" fill="white">Cafe da manha</text>
+  <text x="50" y="177" font-family="'Nunito',sans-serif" font-size="34" font-weight="700" fill="rgba(255,255,255,0.85)">entregue em casa</text>
+  <text x="50" y="220" font-family="'Nunito',sans-serif" font-size="19" font-weight="600" fill="rgba(255,255,255,0.7)">Pedidos disponiveis ate as 10h</text>
+  <rect x="50" y="244" width="155" height="40" rx="20" fill="white"/>
+  <text x="127" y="269" font-family="'Nunito',sans-serif" font-size="15" font-weight="900" fill="#c0710d" text-anchor="middle">Pedir cafe</text>
+  <text x="665" y="205" font-family="serif" font-size="130" fill="rgba(255,255,255,0.14)" text-anchor="middle">&#x2615;</text>
+</svg>

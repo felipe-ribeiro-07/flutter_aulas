@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0392b"/>
+      <stop offset="100%" style="stop-color:#922b21"/>
+    </linearGradient>
+    <clipPath id="clip1"><rect width="400" height="560" rx="24"/></clipPath>
+  </defs>
+  <rect width="400" height="560" fill="url(#bg1)" rx="24"/>
+  <circle cx="320" cy="100" r="180" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="60" cy="480" r="120" fill="rgba(0,0,0,0.1)"/>
+  <rect x="0" y="320" width="400" height="240" fill="rgba(0,0,0,0.25)" rx="0"/>
+  <text x="200" y="300" font-family="serif" font-size="200" text-anchor="middle" fill="rgba(255,255,255,0.15)">🍔</text>
+  <rect x="24" y="24" width="110" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+  <text x="79" y="43" font-family="sans-serif" font-size="12" font-weight="800" fill="white" text-anchor="middle" letter-spacing="1">LANCHE</text>
+  <text x="30" y="380" font-family="sans-serif" font-size="44" font-weight="900" fill="white">Big</text>
+  <text x="30" y="428" font-family="sans-serif" font-size="44" font-weight="900" fill="#FFD700">Smash</text>
+  <text x="30" y="468" font-family="sans-serif" font-size="16" font-weight="600" fill="rgba(255,255,255,0.7)">Artesanal com bacon crocante</text>
+  <rect x="30" y="492" width="160" height="44" rx="22" fill="#FFD700"/>
+  <text x="110" y="519" font-family="sans-serif" font-size="14" font-weight="900" fill="#922b21" text-anchor="middle">R$ 29,90</text>
+  <text x="280" y="519" font-family="sans-serif" font-size="13" font-weight="700" fill="rgba(255,255,255,0.5)" text-decoration="line-through">R$ 42,00</text>
+</svg>

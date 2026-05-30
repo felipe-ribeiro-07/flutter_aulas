@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg2)" rx="16"/>
+  <circle cx="650" cy="80" r="140" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="720" cy="260" r="90" fill="rgba(255,255,255,0.03)"/>
+  <rect x="40" y="40" width="130" height="28" rx="14" fill="rgba(255,100,0,0.35)"/>
+  <text x="105" y="59" font-family="'Nunito',sans-serif" font-size="13" font-weight="800" fill="#ff8c42" text-anchor="middle" letter-spacing="1">PROMOCAO</text>
+  <text x="50" y="135" font-family="'Nunito',sans-serif" font-size="72" font-weight="900" fill="white">30% OFF</text>
+  <text x="50" y="183" font-family="'Nunito',sans-serif" font-size="34" font-weight="700" fill="rgba(255,255,255,0.8)">em todas as pizzas</text>
+  <text x="50" y="223" font-family="'Nunito',sans-serif" font-size="18" font-weight="600" fill="rgba(255,255,255,0.5)">Melhores pizzarias da cidade</text>
+  <rect x="50" y="245" width="170" height="40" rx="20" fill="#ff6b35"/>
+  <text x="135" y="270" font-family="'Nunito',sans-serif" font-size="15" font-weight="900" fill="white" text-anchor="middle">Ver pizzarias</text>
+  <text x="660" y="205" font-family="serif" font-size="130" fill="rgba(255,255,255,0.12)" text-anchor="middle">&#x1F355;</text>
+</svg>
