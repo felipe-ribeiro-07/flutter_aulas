@@ -13,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
 
+  // ignore: non_constant_identifier_names
   final List<String> CategoriasImg = [
     'assets/images/hamburger.png',
     'assets/images/shoppingBasket.png',
@@ -24,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'assets/images/kitMed.png',
   ];
 
+  // ignore: non_constant_identifier_names
   final List<String> CategoriasName = [
     'Restaurantes',
     'Mercado',
@@ -140,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       elevation: 0,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(169, 224, 223, 223),
+                          color: const Color.fromARGB(77, 153, 152, 152),
                           border: Border.all(
                             color: const Color.fromARGB(255, 253, 253, 253),
                           ),
@@ -200,6 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                     ),
                   ),
+                  SizedBox(height: 16),
                   const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -212,14 +215,268 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 6,
                         decoration: BoxDecoration(
                           color: _currentIndex == index
-                              ? const Color.fromARGB(255, 138, 136, 136)
-                              : Colors.grey.shade300,
+                              ? const Color.fromARGB(255, 62, 61, 61)
+                              : const Color.fromARGB(255, 11, 11, 11),
                           borderRadius: BorderRadius.circular(3),
                         ),
                       ),
                     ),
                   ),
                 ],
+              ),
+              SizedBox(height: 25),
+              Row(
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceBetween, // Joga um texto para cada lado
+                children: const [
+                  Text(
+                    "     Últimas Lojas",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight
+                          .bold, // Adicionei negrito para dar destaque ao título (opcional)
+                    ),
+                  ),
+                  Text(
+                    "Ver mais    ",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors
+                          .red, // Coloquei uma cor para parecer clicável (ajuste para a cor do seu app)
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment
+                    .start, // Alinha os itens no início (esquerda)
+                children: [
+                  // --- PRIMEIRO CARD ---
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Card(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      elevation: 1,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: SizedBox(
+                        height: 100,
+                        width: 95,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(FontAwesomeIcons.burger),
+                            SizedBox(height: 8),
+                            Text(
+                              "Hamburguers\nda Jojo",
+                              textAlign: TextAlign
+                                  .center, // Centraliza o texto dentro do card
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  // --- SEGUNDO CARD ---
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 8,
+                    ), // Mantém um espaço entre o 1º e o 2º card
+                    child: Card(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      elevation: 1,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: SizedBox(
+                        height: 100,
+                        width: 95,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Icon(
+                              FontAwesomeIcons.pizzaSlice,
+                            ), // Exemplo de outro ícone
+                            SizedBox(height: 8),
+                            Text(
+                              "Pizzas\nda Jojo",
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceBetween, // Joga um texto para cada lado
+                children: const [
+                  Text(
+                    "     Restaurantes recomendados",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight
+                          .bold, // Adicionei negrito para dar destaque ao título (opcional)
+                    ),
+                  ),
+                  Text(
+                    "Ver mais    ",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors
+                          .red, // Coloquei uma cor para parecer clicável (ajuste para a cor do seu app)
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                height: 130, // Altura fixa do carrossel
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 4,
+                  ),
+                  itemCount: CategoriasName.length,
+                  itemBuilder: (context, index) {
+                    return SizedBox(
+                      width: 120, // Largura para manter o aspecto quadrado
+                      child: Card(
+                        elevation: 2,
+                        margin: const EdgeInsets.only(right: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          side: const BorderSide(color: Colors.white),
+                        ),
+                        color: const Color.fromARGB(156, 242, 216, 216),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Image.asset(
+                                  CategoriasImg[index],
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ), // Espaço entre a imagem e o texto
+                              // Nome do item
+                              Text(
+                                CategoriasName[index],
+                                style: const TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 17, 17, 17),
+                                ),
+                                textAlign: TextAlign.center,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                              const SizedBox(height: 2),
+
+                              // Descrição do item
+                              Text(
+                                CategoriasName[index], // Lembre-se de garantir que esta lista tenha o mesmo tamanho de CategoriasName
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  color: Color.fromARGB(255, 100, 100, 100),
+                                ),
+                                textAlign: TextAlign.center,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              SizedBox(height: 25),
+              SizedBox(
+                height: 90, // Altura total da linha dos cards
+                child: ListView.builder(
+                  scrollDirection: Axis
+                      .horizontal, // Transforma a lista em uma linha horizontal
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 4,
+                  ),
+                  itemCount: icons.length,
+                  itemBuilder: (context, index) {
+                    return SizedBox(
+                      width: 220, // Largura de cada card na linha
+                      child: Card(
+                        elevation: 2, // Adiciona a sombra típica de um Card
+                        margin: const EdgeInsets.only(
+                          right: 12,
+                        ), // Espaçamento entre um card e outro
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          side: const BorderSide(
+                            color: Colors.white,
+                          ), // Mantém a borda branca que você usava
+                        ),
+                        color: const Color.fromARGB(242, 255, 255, 255),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          child: Row(
+                            children: [
+                              Image.asset(CategoriasImg[index]),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      CategoriasName[index],
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color.fromARGB(255, 17, 17, 17),
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    const SizedBox(
+                                      height: 2,
+                                    ), // Pequeno espaço entre o título e a descrição
+                                    Text(
+                                      iconsDesc[index],
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                        color: Color.fromARGB(255, 80, 80, 80),
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
               ),
               SizedBox(height: 25),
               SizedBox(
@@ -310,13 +567,22 @@ class _HomeScreenState extends State<HomeScreen> {
         selectedItemColor: const Color(0xFFEA1D2C),
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: 'Início'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search), label: 'Buscar'),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.home),
+            label: 'Início',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.search),
+            label: 'Buscar',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.receipt_long),
             label: 'Pedidos',
           ),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.person), label: 'Perfil'),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.person),
+            label: 'Perfil',
+          ),
         ],
       ),
     );
