@@ -12,7 +12,7 @@ class CartScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.keyboard_arrow_down, color: Color(0xFFcb0739)),
           onPressed: () {
-           
+           Navigator.pop(context);
           },
         ),
         title: const Text(

@@ -561,9 +561,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
+     bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
-        onTap: (index) => setState(() => _currentIndex = index),
+        onTap: (index) {
+          if (index == 2) {
+            Navigator.pushNamed(context, '/cart');
+          } else {
+            setState(() => _currentIndex = index);
+          }
+        },
         selectedItemColor: const Color(0xFFEA1D2C),
         unselectedItemColor: Colors.grey,
         items: const [
