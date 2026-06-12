@@ -39,7 +39,6 @@ class _PaymentMethodsState extends State<PaymentMethods> {
 
             const SizedBox(height: 30),
 
-            // Apple Pay
             GestureDetector(
               onTap: () {
                 setState(() {
@@ -81,7 +80,6 @@ class _PaymentMethodsState extends State<PaymentMethods> {
 
             const SizedBox(height: 10),
 
-            // PIX
             GestureDetector(
               onTap: () {
                 setState(() {
@@ -136,7 +134,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
 
             const SizedBox(height: 10),
 
-            // Mastercard Crédito
+         
             GestureDetector(
               onTap: () {
                 setState(() {
@@ -178,7 +176,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
 
             const SizedBox(height: 10),
 
-            // Mastercard Débito
+           
             GestureDetector(
               onTap: () {
                 setState(() {
