@@ -234,7 +234,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight
-                          .bold, // Adicionei negrito para dar destaque ao título (opcional)
+                          .bold, // Adicionei negrito para dar destaque ao título
                     ),
                   ),
                   Text(
@@ -302,7 +302,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: const [
                             Icon(
                               FontAwesomeIcons.pizzaSlice,
-                            ), // Exemplo de outro ícone
+                            ), 
                             SizedBox(height: 8),
                             Text(
                               "Pizzas\nda Jojo",
@@ -325,7 +325,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight
-                          .bold, // Adicionei negrito para dar destaque ao título (opcional)
+                          .bold, // Adicionei negrito para dar destaque ao título
                     ),
                   ),
                   Text(
@@ -333,7 +333,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors
-                          .red, // Coloquei uma cor para parecer clicável (ajuste para a cor do seu app)
+                          .red, // Coloquei uma cor para parecer clicável
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -391,7 +391,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                               // Descrição do item
                               Text(
-                                CategoriasName[index], // Lembre-se de garantir que esta lista tenha o mesmo tamanho de CategoriasName
+                                CategoriasName[index], 
                                 style: const TextStyle(
                                   fontSize: 11,
                                   color: Color.fromARGB(255, 100, 100, 100),
