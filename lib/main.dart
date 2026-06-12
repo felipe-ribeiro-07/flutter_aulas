@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ifood/cart_screen.dart';
 import 'package:ifood/home_screen.dart';
+import 'package:ifood/payment_methods.dart';
 
 void main() {
   runApp(
@@ -8,11 +9,8 @@ void main() {
       home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
 
-      routes: {
-        '/cart': (context) => const CartScreen(), 
-      },
-
-    )
+      routes: {'/cart': (context) => const CartScreen(),
+      '/payment': (context) => const PaymentMethods()},
+    ),
   );
 }
-

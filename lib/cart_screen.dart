@@ -614,7 +614,9 @@ class CartScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/payment');
+          },
           child: const Text(
             "Continuar",
             style: TextStyle(
