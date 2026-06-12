@@ -56,15 +56,15 @@ class _HomeScreenState extends State<HomeScreen> {
     'assets/images/card8_uramaki.svg',
   ];
 
-  final List<IconData> icons = [
-    FontAwesomeIcons.burger,
-    FontAwesomeIcons.pizzaSlice,
-    FontAwesomeIcons.fish,
-    FontAwesomeIcons.bowlFood,
-    FontAwesomeIcons.drumstickBite,
-    FontAwesomeIcons.mugHot,
-    FontAwesomeIcons.iceCream,
-  ];
+ final List<FaIconData> icons = [
+  FontAwesomeIcons.burger,
+  FontAwesomeIcons.pizzaSlice,
+  FontAwesomeIcons.fish,
+  FontAwesomeIcons.bowlFood,
+  FontAwesomeIcons.drumstickBite,
+  FontAwesomeIcons.mugHot,
+  FontAwesomeIcons.iceCream,
+];
 
   final List<String> iconsName = [
     'Zezinho Burguer',
@@ -269,7 +269,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: const [
-                            Icon(FontAwesomeIcons.burger),
+                            FaIcon(FontAwesomeIcons.burger),
                             SizedBox(height: 8),
                             Text(
                               "Hamburguers\nda Jojo",
@@ -300,7 +300,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: const [
-                            Icon(
+                            FaIcon(
                               FontAwesomeIcons.pizzaSlice,
                             ), 
                             SizedBox(height: 8),
